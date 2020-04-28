@@ -1,0 +1,9 @@
+[submodule "POSKasa-Backend"]
+	path = POSKasa-Backend
+	url = https://github.com/SuperRsDev/POSKasa-Backend.git
+[submodule "POSKasa-Desktop"]
+	path = POSKasa-Desktop
+	url = https://github.com/SuperRsDev/POSKasa-Desktop.git
+[submodule "POSKasa-Frontend"]
+	path = POSKasa-Frontend
+	url = https://github.com/SuperRsDev/POSKasa-Frontend.git
