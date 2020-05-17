@@ -1,8 +1,0 @@
-{
-    "db": {
-        "name": "DBWT19_TEST",
-        "username": "root",
-        "password": "root",
-        "host": "localhost"
-    }
-}
