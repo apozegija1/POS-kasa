@@ -1,0 +1,279 @@
+{
+	"info": {
+		"_postman_id": "21ad5666-9710-41f8-a736-0fdf9894e45c",
+		"name": "POS kasa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET zahtjevi",
+			"item": [
+				{
+					"name": "GET /users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFwb3plZ2lqYTEiLCJpYXQiOjE1OTEyNjk5NzgsImV4cCI6MTU5MTQ0OTk3OH0.pOqKLeirI9E1el109DMHd9W27eS2JOZ9N85Hbx9iXf0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://poskasa-api.herokuapp.com/api/users",
+							"protocol": "https",
+							"host": [
+								"poskasa-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						},
+						"description": "Dohvaća sve korisnike."
+					},
+					"response": []
+				},
+				{
+					"name": "GET /user/:id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFwb3plZ2lqYTEiLCJpYXQiOjE1OTEyNjk5NzgsImV4cCI6MTU5MTQ0OTk3OH0.pOqKLeirI9E1el109DMHd9W27eS2JOZ9N85Hbx9iXf0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://poskasa-api.herokuapp.com/api/users",
+							"protocol": "https",
+							"host": [
+								"poskasa-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Dohvaća korisnika sa id-em prosljeđenim kao parametar."
+					},
+					"response": []
+				},
+				{
+					"name": "GET /products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFwb3plZ2lqYTEiLCJpYXQiOjE1OTEyNjk5NzgsImV4cCI6MTU5MTQ0OTk3OH0.pOqKLeirI9E1el109DMHd9W27eS2JOZ9N85Hbx9iXf0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://poskasa-api.herokuapp.com/api/products",
+							"protocol": "https",
+							"host": [
+								"poskasa-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "POST zahtjevi",
+			"item": [
+				{
+					"name": "POST /categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFwb3plZ2lqYTEiLCJpYXQiOjE1OTEyNjk5NzgsImV4cCI6MTU5MTQ0OTk3OH0.pOqKLeirI9E1el109DMHd9W27eS2JOZ9N85Hbx9iXf0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Slatkisi",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "opis",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://poskasa-api.herokuapp.com/api/categories",
+							"protocol": "https",
+							"host": [
+								"poskasa-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						},
+						"description": "Ubacuje u bazu jednog korisnika"
+					},
+					"response": []
+				},
+				{
+					"name": "POST /product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFwb3plZ2lqYTEiLCJpYXQiOjE1OTEyNjk5NzgsImV4cCI6MTU5MTQ0OTk3OH0.pOqKLeirI9E1el109DMHd9W27eS2JOZ9N85Hbx9iXf0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Smoki",
+									"type": "text"
+								},
+								{
+									"key": "stockQuantity",
+									"value": "200",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "dostupan",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "neki opis",
+									"type": "text"
+								},
+								{
+									"key": "unitPrice",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "sellingPrice",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "categoryId",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://poskasa-api.herokuapp.com/api/products",
+							"protocol": "https",
+							"host": [
+								"poskasa-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						},
+						"description": "Dodaje proizvod"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "POST api/token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "apozegija1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "amraamra",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://poskasa-api.herokuapp.com/api/token",
+					"protocol": "https",
+					"host": [
+						"poskasa-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
